@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset=big5>
+	<title>判別等第</title>
+	<script type="text/javascript">
+		var n,score;
+		n = prompt("請輸入成績","0");
+		n = parseInt(n);
+		if(n<0 && n>100){
+			alert("請輸入正確的成績!");
+		}else{
+			score = Math.floor(n/10);
+			switch(score){
+				case 10:
+				case 9:
+					document.writeln("<h1>優等!</h1>");
+					break;
+				case 8:
+					document.writeln("<h1>傑出!</h1>");
+					break;
+				case 7:
+					document.writeln("<h1>尚可!</h1>");
+					break;
+				case 6:
+					document.writeln("<h1>普通!</h1>");
+					break;
+				default:
+					document.writeln("<h1>下去!</h1>");
+
+			}
+		}
+	</script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset=big5>
+	<title>算平均</title>
+	<script type="text/javascript">
+		var n,count,su,ans;
+		count=0;
+		sum=0;
+		n = prompt("輸入一個數，或-1結束:");
+		n = parseInt(n);
+		while(n!=-1){
+			sum=sum+n;
+			n = prompt("輸入一個數，或-1結束:");
+			n = parseInt(n);
+			count++;
+		}
+		if(count==0){
+			document.writeln("<h1>ㄚ不是叫你輸入</h1>");
+		}else{
+			ans = sum/count;
+			document.writeln("<h1>平均="+ans+"</h1>");
+		}
+	</script>
+</head>
+<body>
+
+</body>
+</html>

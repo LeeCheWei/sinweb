@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset=big5>
+	<title>表單檢測</title>
+	<script type="text/javascript">
+		function Check_data(){
+			
+			if(form1.teacher.checked==true){
+				alert("你是一位"+form1.teacher.value);
+			}else if(form1.black.checked==true){
+				alert("你是一位"+form1.black.value);
+			}else{
+				alert("你是一位"+form1.student.value);
+			}
+
+			if(form1.name.value==""){
+				alert("輸入名子阿!");
+			}else if(form1.email.value==""){
+				alert("輸入信箱阿!");
+			}else if(form1.email.value.indexOf('@')==-1){
+				alert("信箱要有@阿!");
+			}else{
+				form1.submit();
+			}
+
+		}
+
+	</script>
+</head>
+<body>
+	<font size=6 color="blue">表單檢測</font>
+	<hr>
+	<form name="form1" action="test7.htm" method=post>
+		姓名:<input type="text" name="name" id="name"><br><br>
+		信箱:<input type="text" name="emai" id="email"><br><br>
+		您的職業:<input type="radio" name="job" id="teacher" value="老師" checked>老師
+				<input type="radio" name="job" id="black" value="黑道">黑道
+				<input type="radio" name="job" id="student" value="學生">學生<br><br>
+
+		<input type="button" name="送出" value="送出" onclick='Check_data()'>
+	</form>
+</body>
+</html>

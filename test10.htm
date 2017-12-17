@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="big5">
+	<title>滑鼠事件</title>
+	<script type="text/javascript">
+		function mouseover(){
+			var x;
+			var change = document.all.tags("font");
+			for(x=0;x<change.length;x++){
+				if(change[x].innerText == "把滑鼠移到這邊!!!!!!!!"){
+					change[x].outerText ="我改變了";
+				}
+			}
+		}
+
+		function mouseout(){
+			var x;
+			var change = document.all.tags("font");
+
+			for(x=0;x<20;x++){
+				
+			}
+		}
+	</script>
+</head>
+<body>
+	<font size=5 color="blue">滑鼠事件測試</font>
+	<hr>
+	<p onmouseover="mouseover()" onmouseout="mouseout()"><font color="red">把滑鼠移到這邊!!!!!!!!</font></p>
+</body>
+</html>

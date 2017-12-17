@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset=big5>
+	<title>運算式</title>
+	<style type="text/css">
+		#btn{
+			 height:40px;
+			 font-size:25px;"
+		}
+		#text{
+			height:20px;
+			font-size:20px;"
+		}
+	</style>
+</head>
+<body>
+	<font size=5 color="blue">運算式測試</font>
+	<hr>
+	<form name="form1">
+		請輸入一個運算式
+		<input type="text" name="math" id="text"><br><br>
+		結果 <input type="text" name="result" id="text"><br><br>
+		<input type="button" name="btn" value="輸入完按一下" onclick="form1.result.value=eval(form1.math.value)" id="btn"><br><br>
+	</form>
+</body>
+</html>
